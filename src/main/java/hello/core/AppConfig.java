@@ -25,7 +25,9 @@ public class AppConfig {
     public OrderService orderService() {
 
         System.out.println("call AppConfig.orderService");
-        return new OrderServiceImpl(memberRepository(), discountPolicy());
+        // 필드 주입을 적용하며 기존 생성자 코드 주석처리하며 기절한 코드 됨
+//        return new OrderServiceImpl(memberRepository(), discountPolicy());
+        return null;
     }
 
     @Bean
