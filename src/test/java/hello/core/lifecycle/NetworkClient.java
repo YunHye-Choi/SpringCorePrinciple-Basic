@@ -8,7 +8,7 @@ public class NetworkClient{
 
     public NetworkClient(){
         System.out.println("생성자 호출, url = " + url);
-
+        System.out.println("close: " + url);
     }
 
     public void setUrl(String url) {
